@@ -62,9 +62,9 @@ def prepare_data(df):
         df_prepared: A pandas DataFrame with the prepared data
 
        """
-    # 1. Drop the list of named columns `['Events', 'Sports', 'Countries'] and
+    # 1. Drop the list of named columns `['Events6', 'Sports7', 'Countries8'] and
     # assign the result to a new variable named df_prepared
-    df_prepared = ''  # Add code and delete the ''
+    df_prepared = df.drop(['Events', 'Sports', 'Countries'], axis=1)  # Add code and delete the ''
     return df_prepared
 
 
